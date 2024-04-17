@@ -2,29 +2,17 @@
 
 type ButtonPropsType = {
   name: string
+  callback: () => void
 }
 
-
-
-
 export const Button = (props: ButtonPropsType) => {
-//   const myFirstSybscriber = (event: React.MouseEvent<HTMLButtonElement>) => {
-//     console.log("Hello im Oleg");
-//   };
-
-//   const myTwoSybscriber = (event: React.MouseEvent<HTMLButtonElement>) => {
-//     console.log("Hello im Ivan");
-//   };
-
-// const onClickHandler = (name: string) => {
-//   console.log(name)
-// }
+const onClickHandler = () => {
+  props.callback()
+}
 
   return (
     <div>
-      <button>{props.name}</button>
-      {/* <button onClick = {(event: React.MouseEvent<HTMLButtonElement>) => onClickHandler('Oleg')}>MyYoutobeChanelk-1</button>
-      <button onClick = {(event: React.MouseEvent<HTMLButtonElement>) =>onClickHandler('Ivan')}>MyYoutobeChanelk-2</button> */}
+      <button onClick = {onClickHandler}>{props.name}</button>
     </div>
   );
 };
