@@ -6,22 +6,26 @@ import { Header } from "./site/Header";
 import { Button } from "./site/Button";
 
 function App() {
-const Button1Foo = () => {
-console.log('im MalGanis')
+const Button1Foo = (subscriber: string, age: number, address: string) => {
+console.log(subscriber, age, address)
 }
 
-const Button2Foo = () => {
-  console.log('im Trall')
+const Button2Foo = (subscriber: string) => {
+  console.log(subscriber)
 }
 
+const Button3Foo = () => {
+  console.log('im stupid button')
+}
 
   return (
     <>
       <Header titleHeader={"Header"} />
       <Body titleBody={"Body"} />
       <Footer titleFooter={"Footer"} />
-      <Button name="MyYoutobeChanel-1" callback={Button1Foo}/>
-      <Button name="MyYoutobeChanel-2" callback={Button2Foo}/>
+      <Button name={"MyYoutobeChanel-1"} callBack={()=>Button1Foo('im MalGanis', 33, 'Live in Moscow')}/>
+      <Button name={"MyYoutobeChanel-2"} callBack={()=>Button2Foo('im Trall')}/>
+      <Button name={"stupid button"} callBack={Button3Foo}/>
     </>
   );
 }

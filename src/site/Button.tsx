@@ -1,13 +1,14 @@
+
 // import React, {MouseEvent} from 'react'
 
 type ButtonPropsType = {
   name: string
-  callback: () => void
+  callBack: () => void
 }
 
 export const Button = (props: ButtonPropsType) => {
 const onClickHandler = () => {
-  props.callback()
+  props.callBack()
 }
 
   return (
