@@ -27,7 +27,8 @@ function App() {
       <Body titleBody={"Body"} />
       <Footer titleFooter={"Footer"} />
       <NewComponent students={students} />
-      <Button />
+      <Button name="MyYoutobeChanel-1"/>
+      <Button name="MyYoutobeChanel-2"/>
     </>
   );
 }
