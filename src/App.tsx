@@ -4,7 +4,7 @@ import { Body } from "./site/Body";
 import { Footer } from "./site/Footer";
 import { Header } from "./site/Header";
 import { Button } from "./site/Button";
-import { log } from "console";
+import { NewComponent } from "./site/NewComponent";
 
 function App() {
 const Button1Foo = (subscriber: string, age: number, address: string) => {
@@ -20,7 +20,7 @@ const Button3Foo = () => {
 }
 
 // let a = 1;
-let [a, setA] = useState (0)
+let [a, setA] = useState (1)
 
 const onClickHandler = () => {
   setA (++a);
@@ -42,6 +42,7 @@ const reset = () => {
       <h1>{a}</h1>
       <button onClick={onClickHandler}>number</button>
       <button onClick={reset}>0</button>
+      <NewComponent />
     </>
   );
 }
