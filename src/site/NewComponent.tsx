@@ -23,8 +23,11 @@ export const NewComponent = () => {
     { banknots: "RUBLS", value: 50, number: " v1234567890" },
   ]);
 
-
   let correntMoney = money.filter((filterMoney)=>filterMoney.banknots==='RUBLS')
+
+  let onClickFilterHandler = (nameButton: string ) => {
+    console.log(nameButton)
+  }
 
   return (
     <div>
@@ -39,7 +42,11 @@ export const NewComponent = () => {
           );
         })}
       </ul>
-      <button></button>
+      <div>
+      <button onClick={onClickFilterHandler}>all</button>
+      <button onClick={onClickFilterHandler}>ruble</button>
+      <button onClick={onClickFilterHandler}>dollar</button>
+      </div>
     </div>
    
   );
