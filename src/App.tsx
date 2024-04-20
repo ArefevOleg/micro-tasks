@@ -33,7 +33,7 @@ const reset = () => {
 
   return (
     <>
-      <Header titleHeader={"Header"} />
+      <Header titleHeader={"Header menu"} />
       <Body titleBody={"Body"} />
       <Footer titleFooter={"Footer"} />
       <Button name={"MyYoutobeChanel-1"} callBack={()=>Button1Foo('im MalGanis', 33, 'Live in Moscow')}/>
