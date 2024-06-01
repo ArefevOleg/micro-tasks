@@ -16,3 +16,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btnWrap {
+  display: flex;
+  gap: 5px;
+}
+ul {
+  list-style: none;
+}
